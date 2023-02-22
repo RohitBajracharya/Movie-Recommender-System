@@ -91,7 +91,7 @@ display:none;
 
 /* ----about us start ----------*/
 .aboutus{
-    background: url(about.jpeg) no-repeat left;
+    background: url(/images/about.jpeg) no-repeat left;
     background-size: 55%;
     overflow: hidden;
     padding: 100px 0;
