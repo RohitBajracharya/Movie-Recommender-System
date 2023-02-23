@@ -1,0 +1,16 @@
+{% load static %}
+<header>
+	<h1>FilmFinder</h1>
+</header>
+
+<nav>
+	<input type="checkbox" id="check" />
+	<label for="check" class="checkbtn">
+		<i class="fa fa-bars"></i>
+	</label>
+	<ul>
+		<li><a href="{% url 'Landing' %} ">Home</a></li>
+		<li><a href="{% url 'About' %}">About Us</a></li>
+		<li><a href="{% url 'Login' %}">Login</a></li>
+	</ul>
+</nav>

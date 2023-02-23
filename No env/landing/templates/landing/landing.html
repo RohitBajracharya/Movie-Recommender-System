@@ -1,0 +1,15 @@
+{% extends 'main.html' %} {% block content %} {% load static %}
+
+<div class="container">
+	<h2>Easy Movie Finder</h2>
+	<img
+		src="{% static '/img/LandingImage.jpg'%}"
+		alt="image"
+		class="landing-image"
+	/>
+	<div class="go-home">
+		<a href=" {% url 'Home' %} ">Go to Home</a>
+	</div>
+</div>
+
+{% include 'footer.html' %} {% endblock content %}

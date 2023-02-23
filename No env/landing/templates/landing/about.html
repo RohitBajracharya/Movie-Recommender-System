@@ -1,0 +1,60 @@
+{% extends 'main.html' %} {% block content %} {% load static %}
+
+<div
+	style="
+		background: url('{% static 'img/about.jpeg' %}') no-repeat left;
+		background-size: 55%;
+	"
+	class="aboutus"
+>
+	<div class="title-text">
+		<h2>ABOUT US</h2>
+		<p class="text">
+			Watching movies is fun, but it is a tiresome experience to decide on which
+			movie to watch. Endlessly scrolling through Netflix, watching trailers on
+			YouTube, looking up IMDb ratings, wasting half an hour and still cannot
+			decide what to watch – does this seem familiar to you? Then you have
+			landed on the right page! FilmFinder’s movie recommendation engine is the
+			answer to the question “What movie should I watch?”. Your film choices are
+			about to be simplified greatly.
+		</p>
+	</div>
+</div>
+
+<div class="inner-title">
+	<h2>Why Choose Us</h2>
+</div>
+
+<div class="box-container">
+	<div class="box">
+		<i class="fas fa-search"></i>
+		<h3>Easy Movie Finder</h3>
+		<p>
+			It make it easier for you to find the movies you would like to watch based
+			on you own preferences.
+		</p>
+	</div>
+
+	<div class="box">
+		<i class="fas fa-tv"></i>
+		<h3>Your Watchlist</h3>
+		<p>
+			Create your personalized list from many titles on the available movie
+			database.
+		</p>
+	</div>
+
+	<div class="box">
+		<i class="fas fa-check"></i>
+		<h3>Stay up to date</h3>
+		<p>
+			Use your list to organize and track the titles you have watched, your
+			current progress and what you plan to watch.
+		</p>
+	</div>
+
+	<!-- <div class="about-img">
+            <img src="1.webp">
+        </div> -->
+</div>
+{% include 'footer.html' %} {% endblock content %}

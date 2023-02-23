@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Register</title>
+		<link rel="stylesheet" href="{% static 'css/register.css' %}" />
+	</head>
+	<body>
+		<div class="container">
+			<form id="signup-form" action="" method="get">
+				<h1>Sign Up</h1>
+				<label for="username"><b>Username</b></label>
+				<input
+					type="text"
+					id="username"
+					placeholder="Enter Username"
+					name="username"
+				/>
+
+				<label for="email"><b>Email</b></label>
+				<input type="text" id="email" placeholder="Enter Email" name="email" />
+
+				<label for="password"><b>Password</b></label>
+				<input
+					type="password"
+					id="password"
+					placeholder="Enter Password"
+					name="password"
+				/>
+
+				<label for="password-confirm"><b>Confirm Password</b></label>
+				<input
+					type="password"
+					id="confirm-password"
+					placeholder="Confirm Password"
+					name="confirm-password"
+				/>
+
+				<button type="submit">Sign Up</button>
+				<p>Already have an account? <a href="{% url 'Login' %}">Login</a></p>
+			</form>
+		</div>
+		<script src="{% static 'js/register.js' %}"></script>
+	</body>
+</html>
