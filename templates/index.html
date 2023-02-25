@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- own -->
+		<meta charset="UTF-8" />
+		<title>My Website</title>
+		<!-- Bootstrap link -->
+		<link
+			rel="stylesheet"
+			href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+		/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css?family=Roboto"
+		/>
+
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="{{ url_for('static', filename='css/landingPg.css') }}"
+		/>
+	</head>
+	<body>
+		<header>
+			<h1>FlimFinder</h1>
+		</header>
+
+		<nav>
+			<input type="checkbox" id="check" />
+			<label for="check" class="checkbtn">
+				<i class="fa fa-bars"></i>
+			</label>
+			<ul>
+				<li><a href="/home">Home</a></li>
+				<li><a href="/about">About Us</a></li>
+				<li><a href="/login">Login</a></li>
+			</ul>
+		</nav>
+		<div class="container">
+			<h2>Easy Movie Finder</h2>
+			<img
+				src="static/img/LandingImage.jpg"
+				alt="image"
+				class="landing-image"
+			/>
+			<div class="go-home">
+				<a href="/recommendation">Go to Home</a>
+			</div>
+		</div>
+
+		<footer>
+			<p>Follow us:</p>
+			<ul class="social-icons">
+				<li><a href="#" class="facebook-icon">Facebook</a></li>
+				<li><a href="#" class="instagram-icon">Instagram</a></li>
+				<li><a href="#" class="twitter-icon">Twitter</a></li>
+			</ul>
+			<hr background color="grey" />
+			<p>
+				&copy; 2023 FlimFinder,Movie Recommendation Website. All rights
+				reserved.
+			</p>
+		</footer>
+
+		<!-- Option 1: Bootstrap Bundle with Popper -->
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>
